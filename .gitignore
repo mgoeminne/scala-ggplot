@@ -1,6 +1,8 @@
 *.class
 *.log
 
+scaladoc/
+
 # sbt specific
 .cache
 .history
