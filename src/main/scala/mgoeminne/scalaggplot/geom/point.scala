@@ -60,7 +60,7 @@ case class point[T](  mapping: Option[(Seq[Numeric[T]], Seq[Numeric[T]])] = None
                       stat: Statistic = pointUtil.defaultStat,
                       position: Position = pointUtil.defaultPos,
                       removeNA: Boolean = false,
-                      colour: Option[Color] = None,
+                      colour: Color = Color.black,
                       size: Int = 3) extends Geom
 
 private object pointUtil

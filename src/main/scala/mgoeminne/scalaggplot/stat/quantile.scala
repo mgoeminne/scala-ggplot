@@ -1,7 +1,7 @@
 package mgoeminne.scalaggplot.stat
 
 /**
- * Created by mg on 23/05/15.
+ * Quantile regression.
  */
 case class quantile() extends Statistic
 {

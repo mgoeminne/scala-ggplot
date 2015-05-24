@@ -9,7 +9,9 @@ import org.saddle.Frame
 
 
 /**
- * Bin data.
+ * Bins data.
+ *
+ * Divides continuous range into bins, and count number of points in each.
  *
  * New data frame with additional columns: countnumber of points in bin densitydensity of points in bin,
  * scaled to integrate to 1 ncountcount,

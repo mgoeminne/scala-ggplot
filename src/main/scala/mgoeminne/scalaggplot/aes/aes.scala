@@ -4,6 +4,7 @@ import java.awt.Color
 
 import mgoeminne.scalaggplot.Shape.Shape
 import mgoeminne.scalaggplot.geom
+import org.saddle.Series
 
 /**
  * Generate aesthetic mappings that describe how variables
@@ -17,10 +18,12 @@ import mgoeminne.scalaggplot.geom
  *
  * @param x name of the column for the x dimension
  * @param y name of the column for the y dimension
+ * @param group  An optional function associating rows to groups. By default all rows belong to the same group.
  * @param colour name of the column used for applying colours to the plot
  * @param shape  name of the column used for applying shapes to the plot
  */
-case class aes(x: String,
-               y: String,
-               colour: Option[Color] = None,
-               shape: Option[Shape] = None) extends Aesthetic
+case class aes[X,T,G]( x: String,
+                     y: String,
+                     group: Option[(Series[X,T] => G)] = None,
+                     colour: Option[Color] = None,
+                     shape: Option[Shape] = None) extends Aesthetic
