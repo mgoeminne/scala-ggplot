@@ -5,8 +5,9 @@ package mgoeminne.scalaggplot
  */
 object GnuPlotEvaluator
 {
-   def parse(command: Seq[GGElement]) =
+   def parse[A,B,C](g: ggplot[A,B,C]) =
    {
-      print(command.size)
+      println("Nb aes: " + g.aes.size)
+      println("Nb geoms: " + g.geoms.size)
    }
 }

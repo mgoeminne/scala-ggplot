@@ -17,7 +17,7 @@ import org.saddle.Frame
  * but the idea is to get you experimenting with different binwidths.
  * You may need to look at a few to uncover the full story behind your data.
  *
- * == Aesthetics
+ * == Aesthetics ==
  *
  * This function understands the following aesthetics (required aesthetics are in bold):
  *

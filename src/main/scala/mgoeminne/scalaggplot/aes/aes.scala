@@ -1,5 +1,8 @@
 package mgoeminne.scalaggplot.aes
 
+import java.awt.Color
+
+import mgoeminne.scalaggplot.Shape.Shape
 import mgoeminne.scalaggplot.geom
 
 /**
@@ -19,5 +22,5 @@ import mgoeminne.scalaggplot.geom
  */
 case class aes(x: String,
                y: String,
-               colour: Option[String] = None,
-               shape: Option[String] = None) extends Aesthetic
+               colour: Option[Color] = None,
+               shape: Option[Shape] = None) extends Aesthetic

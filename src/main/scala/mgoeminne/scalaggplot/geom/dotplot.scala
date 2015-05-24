@@ -35,7 +35,7 @@ import org.saddle.Frame
  *
  * TODO
  *
- * == References
+ * == References ==
  *
  * Wilkinson, L. (1999) Dot plots. The American Statistician, 53(3), 276-281.
  *

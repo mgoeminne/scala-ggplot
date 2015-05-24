@@ -9,7 +9,7 @@ import org.saddle.Frame
 /**
  * Calculates components of box and whisker plot.
  *
- * == Aesthetics
+ * == Aesthetics ==
  *
  * This function understands the following aesthetics (required aesthetics are in bold):
  *

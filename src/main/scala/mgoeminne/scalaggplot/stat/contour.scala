@@ -10,7 +10,7 @@ import org.saddle.Frame
 /**
  * Calculates contours of 3d data.
  *
- * == Aesthetics
+ * == Aesthetics ==
  *
  * This function understands the following aesthetics (required aesthetics are in bold):
  *

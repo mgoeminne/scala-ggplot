@@ -22,10 +22,12 @@ import org.saddle.Frame
  * The biggest potential problem with a scatterplot is overplotting: whenever you have more than a few points,
  * points may be plotted on top of one another. This can severely distort the visual appearance of the plot.
  * There is no one solution to this problem, but there are some techniques that can help.
- * You can add additional information with [[stat.smooth]], [[stat.quantile]] or [[stat.density2d]].
+ * You can add additional information with [[mgoeminne.scalaggplot.stat.smooth]], [[mgoeminne.scalaggplot.stat.quantile]]
+ * or [[mgoeminne.scalaggplot.stat.density2d]].
  * If you have few unique `x` values, [[boxplot]] may also be useful.
- * Alternatively, you can summarise the number of points at each location and display that in some way, using [[stat.sum]].
- * Another technique is to use transparent points, `point(alpha = 0.05)`.
+ * Alternatively, you can summarise the number of points at each location and display that in some way,
+ * using [[mgoeminne.scalaggplot.stat..sum]].
+ * Another technique is to use transparent points, `[[point]](alpha = 0.05)`.
  *
  * == Aesthetics ==
  *

@@ -8,7 +8,7 @@ import org.saddle.Frame
 /**
  * Adds a smoothed conditional mean.
  *
- * == Aesthetics
+ * == Aesthetics ==
  *
  * This function understands the following aesthetics:
  *

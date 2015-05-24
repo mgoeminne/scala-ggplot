@@ -15,11 +15,13 @@ object Test
 
       val df = Frame("x" -> u, "y" -> v)
       val a = ggplot()
-      val b: Seq[GGElement] = ggplot(df)
+      val b = ggplot(df)
       val c = ggplot(df, aes.aes("x","y"))
 
       val d = b + aes.aes("x","y") + geom.point()
 
+      GnuPlotEvaluator.parse(d)
+      GnuPlotEvaluator.parse(c)
       GnuPlotEvaluator.parse(d)
    }
 }

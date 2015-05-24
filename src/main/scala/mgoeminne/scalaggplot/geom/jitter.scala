@@ -11,9 +11,9 @@ import org.saddle.Frame
  * Points, jittered to reduce overplotting.
  *
  * The Position.jitter geom is a convenient default for point with position = 'Position.jitter'.
- * See [[pos.jitter]] to see how to adjust amount of jittering.
+ * See [[mgoeminne.scalaggplot.position.jitter]] to see how to adjust amount of jittering.
  *
- * == Aesthetics
+ * == Aesthetics ==
  *
  * This function understands the following aesthetics:
  *

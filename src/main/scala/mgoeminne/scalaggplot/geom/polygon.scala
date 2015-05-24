@@ -8,7 +8,7 @@ import org.saddle.Frame
 /**
  * Polygon, a filled path.
  *
- * == Aesthetics
+ * == Aesthetics ==
  *
  * This function understands the following aesthetics:
  *
