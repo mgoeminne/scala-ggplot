@@ -1,8 +1,12 @@
 package mgoeminne.scalaggplot.geom
 
+import java.awt.Color
+
+import mgoeminne.scalaggplot.LineStyle.LineStyle
+import mgoeminne.scalaggplot.LineStyle.LineStyle
 import mgoeminne.scalaggplot.position.Position
 import mgoeminne.scalaggplot.stat.Statistic
-import mgoeminne.scalaggplot.{aes, position, stat}
+import mgoeminne.scalaggplot.{LineStyle, aes, position, stat}
 import org.saddle.Frame
 
 /**
@@ -28,12 +32,16 @@ import org.saddle.Frame
  * @param data      A layer specific dataset - only needed if you want to override the plot defaults.
  * @param stat      The statistical transformation to use on the data for this layer.
  * @param position  The position adjustment to use for overlappling points on this layer.
+ * @param style      the line style.
+ * @param colour     the colour of the line
  * @tparam T
  */
 case class line[T](   mapping: Option[(Seq[Numeric[T]], Seq[Numeric[T]])] = None,
                       data: Option[Frame[Any,Any,T]] = None,
                       stat: Statistic = lineUtil.defaultStat,
-                      position: Position = lineUtil.defaultPos) extends Geom
+                      position: Position = lineUtil.defaultPos,
+                      style: LineStyle = LineStyle.solid,
+                      colour: Color = Color.black) extends Geom
 
 private object lineUtil
 {
