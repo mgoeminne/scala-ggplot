@@ -48,9 +48,10 @@ package object scalaggplot
 
    def ggplot(): Seq[GGElement] = Seq.empty
 
-   abstract implicit class RichSeq[A](s: Seq[A]) extends Seq[A]
-   {
-      def +(element: A) = this :+ element
+   class RichSeq[T](self: Seq[T]) {
+      def +(t: T) = self :+ t
    }
+
+   implicit def richSeq[T](self: Seq[T]) = new RichSeq(self)
 }
 
