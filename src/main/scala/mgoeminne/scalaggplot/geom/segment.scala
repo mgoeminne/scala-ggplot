@@ -39,7 +39,7 @@ case class segment[T](  mapping: Option[(Seq[Numeric[T]], Seq[Numeric[T]])] = No
                         data: Option[Frame[Any,Any,T]] = None,
                         stat: Statistic = segmentUtil.defaultStat,
                         position: Position = segmentUtil.defaultPos,
-                        arrow: Option[Arrow] = None,
+                        arrow: Option[String] = None,
                         lineEnd: String = "butt",
                         removeNA: Boolean = false) extends Geom
 
